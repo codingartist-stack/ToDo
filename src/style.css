@@ -1,3 +1,10 @@
+:root {
+  --lightest-color: #f7f6f2;
+  --tan-color: #f0e5cf;
+  --neutral-color: #c8c6c6;
+  --action-color: #4b6587;
+}
+
 body {
-  background-color: lightblue;
+  background-color: var(--lightest-color);
 }
