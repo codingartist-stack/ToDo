@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import './style.css';
+import './sidebar';
 
-function checkingConnection() {
-  return console.log('We are connected with the plugins!!');
-}
+const mainContainer = document.createElement('div');
+mainContainer.id = 'mainContainer';
 
-checkingConnection();
+document.body.appendChild(mainContainer);
