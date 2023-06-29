@@ -1,3 +1,7 @@
-export default function checkingConnection() {
-  return console.log('Side Bar connected');
-}
+import { mainContainer } from './mainContainer';
+
+const sidebar = document.createElement('div');
+sidebar.classList.add('sidebar');
+mainContainer.appendChild(sidebar);
+
+sidebar.innerText = 'i am a sidebar';
