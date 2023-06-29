@@ -69,3 +69,7 @@ body {
   background-color: var(--lightest-color);
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
 }
+
+.sidebar {
+  background-color: var(--neutral-color);
+}
