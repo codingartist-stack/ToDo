@@ -1,5 +1,3 @@
-import { mainContainer } from './mainContainer';
-
 const overView = document.createElement('div');
 //My Today
 //next 7days
