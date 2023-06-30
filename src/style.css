@@ -65,6 +65,10 @@
   src: url(./fonts/SpecialElite-Regular.ttf);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color: var(--lightest-color);
