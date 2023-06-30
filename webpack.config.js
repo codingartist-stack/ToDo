@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'ToDo',
+      filename: 'index.html',
     }),
   ],
   output: {
