@@ -1,21 +1,23 @@
 const myLists = document.getElementById('myLists');
 const toDoBoards = document.getElementById('ToDoBoards');
 
-const addListLine = document.createElement('ul');
-myLists.appendChild(addListLine);
+function addListLink(parentList) {
+  const addListLine = document.createElement('li');
 
-const addListLink = document.createElement('a');
-addListLink.innerText = 'Add List';
-addListLink.href = ' ';
-addListLine.appendChild(addListLink);
+  const addList = document.createElement('a');
+  addList.classList.add('addLink');
+  addList.innerText = 'Add List';
+  addList.href = ' ';
 
-const addToDoBoardLists = document.createElement('ul');
-toDoBoards.appendChild(addToDoBoardLists);
+  addListLine.appendChild(addList);
 
-const addToDoBoardLine = document.createElement('li');
-toDoBoards.appendChild(addToDoBoardLine);
+  parentList.appendChild(addListLine);
+}
 
-const addToDoBoardLink = document.createElement('a');
-addToDoBoardLink.innerText = 'Add Board';
-addToDoBoardLink.href = ' ';
-addToDoBoardLine.appendChild(addToDoBoardLink);
+addListLink(myLists);
+addListLink(toDoBoards);
+
+//click the add list
+//be able to name the list
+//click on the new list
+//jump to blank list that I can add items to
