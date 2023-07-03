@@ -1,3 +1,5 @@
+const list = document.getElementsByClassName('nav');
+
 const overView = document.createElement('div');
 //My Today
 //next 7days
