@@ -71,10 +71,28 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--lightest-color);
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
 }
 
 .sidebar {
   background-color: var(--neutral-color);
+}
+
+.skip-nav-link {
+  background-color: var(--action-color);
+  color: var(--lightest-color);
+  font-size: large;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0 0 0.25rem 0.25rem;
+  position: absolute;
+  left: 0.5rem;
+  transform: translateY(-200%);
+  transition: transform 325ms ease-in;
+}
+
+.skip-nav-link:focus {
+  transform: translateY(0);
+  top: 0;
 }

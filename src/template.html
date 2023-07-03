@@ -6,12 +6,14 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <a href=".mainContentContainer">skip navigation</a>
+    <a class="skip-nav-link" href="#mainContent">skip navigation</a>
     <div class="sidebar">
       <nav class="primary-nav">
         <ul role="list" class="nav"></ul>
       </nav>
     </div>
-    <div class="mainContentContainer">I am the main container</div>
+    <div class="mainContentContainer" id="mainContent">
+      I am the main container
+    </div>
   </body>
 </html>
