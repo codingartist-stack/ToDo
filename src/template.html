@@ -14,6 +14,9 @@
             <li role="presentation"><a href="">My Today</a></li>
             <li role="presentation"><a href="">Next 7 Days</a></li>
             <li role="presentation"><a href="">All Tasks</a></li>
+            <li onclick="doStuff(this)">
+              <button><span>ADD</span></button>
+            </li>
           </ul>
           <ul id="myLists">
             <h3 class="navListHeading">My Lists</h3>
@@ -32,4 +35,11 @@
       I am the main container
     </div>
   </body>
+  <script>
+    function doStuff(target) {
+      const newLine = document.createElement('li');
+      newLine.innerText = 'new list';
+      target.parentNode.insertBefore(newLine, target);
+    }
+  </script>
 </html>

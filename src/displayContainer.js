@@ -1,3 +1,3 @@
-export const mainContentContainer = document.getElementsByClassName(
+export const mainContentContainer = document.getElementById(
   'mainContentContainer'
 );

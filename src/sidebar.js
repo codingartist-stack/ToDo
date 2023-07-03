@@ -1,21 +1,27 @@
-const myLists = document.getElementById('myLists');
-const toDoBoards = document.getElementById('ToDoBoards');
+// import plusIcon from './images/icons-svg/add_FILL1_wght400_GRAD0_opsz48';
 
-function addListLink(parentList) {
-  const addListLine = document.createElement('li');
+// const myLists = document.getElementById('myLists');
+// const toDoBoards = document.getElementById('ToDoBoards');
 
-  const addList = document.createElement('a');
-  addList.classList.add('addLink');
-  addList.innerText = 'Add List';
-  addList.href = ' ';
+// const iconImage = new Image();
+// iconImage.src = plusIcon;
 
-  addListLine.appendChild(addList);
+// function appendLinkToList(parentList) {
+//   const line = document.createElement('li');
+//   line.appendChild(iconImage);
 
-  parentList.appendChild(addListLine);
-}
+//   const link = document.createElement('a');
+//   link.classList.add('addLink');
+//   link.innerText = ' Add';
+//   link.href = ' ';
 
-addListLink(myLists);
-addListLink(toDoBoards);
+//   line.appendChild(link);
+
+//   parentList.appendChild(line);
+// }
+
+// appendLinkToList(myLists);
+// appendLinkToList(toDoBoards);
 
 //click the add list
 //be able to name the list
