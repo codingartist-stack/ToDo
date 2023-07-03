@@ -1,6 +1,8 @@
-const list = document.getElementsByClassName('nav');
+const list = document.getElementById('nav');
 
-const overView = document.createElement('div');
+const overView = document.createElement('li');
+overView.innerText = 'My Today';
+list.appendChild(overView);
 //My Today
 //next 7days
 //all my tasks

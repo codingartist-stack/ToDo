@@ -96,3 +96,7 @@ body {
   transform: translateY(0);
   top: 0;
 }
+
+ul {
+  margin: 0;
+}
