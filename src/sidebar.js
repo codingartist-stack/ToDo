@@ -1,8 +1,7 @@
 const myLists = document.getElementById('myLists');
 const toDoBoards = document.getElementById('ToDoBoards');
 
-const addListLine = document.createElement('li');
-addListLine.role = 'presentation';
+const addListLine = document.createElement('ul');
 myLists.appendChild(addListLine);
 
 const addListLink = document.createElement('a');
@@ -10,8 +9,7 @@ addListLink.innerText = 'Add List';
 addListLink.href = ' ';
 addListLine.appendChild(addListLink);
 
-const addToDoBoardLine = document.createElement('li');
-addToDoBoardLine.role = 'presentation';
+const addToDoBoardLine = document.createElement('ul');
 toDoBoards.appendChild(addToDoBoardLine);
 
 const addToDoBoardLink = document.createElement('a');
