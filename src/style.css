@@ -100,3 +100,8 @@ body {
 ul {
   margin: 0;
 }
+
+.mainContentContainer {
+  background-image: url(./images/watercolor_background.jpg);
+  background-size: cover;
+}
