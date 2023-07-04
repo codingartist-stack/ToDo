@@ -1,4 +1,4 @@
-function createNewListTitle(target) {
+export default function createNewListTitle(target) {
   const newLine = document.createElement('li');
   const linkTag = document.createElement('a');
   linkTag.href = ' ';

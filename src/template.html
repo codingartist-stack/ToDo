@@ -21,14 +21,16 @@
             <li role="presentation"><a href="">Work</a></li>
             <li role="presentation"><a href="">Shopping Lists</a></li>
             <!-- title card is the name of shop, example one card called walmart another called target -->
-            <li onclick="createNewListTitle(this)">
-              <button><span>ADD</span></button>
+            <li>
+              <button class="addButton" id="myListButton">
+                <span>ADD</span>
+              </button>
             </li>
           </ul>
           <ul id="ToDoBoards">
             <h3 class="navListHeading">To Do Boards</h3>
-            <li onclick="createNewListTitle(this)">
-              <button><span>ADD</span></button>
+            <li>
+              <button class="addButton"><span>ADD</span></button>
             </li>
           </ul>
         </ul>
@@ -38,7 +40,7 @@
       I am the main container
     </div>
   </body>
-  <script>
+  <!-- <script>
     function createNewListTitle(target) {
       const newLine = document.createElement('li');
       const linkTag = document.createElement('a');
@@ -49,5 +51,5 @@
       linkTag.innerText = lineTitle;
       target.parentNode.insertBefore(newLine, target);
     }
-  </script>
+  </script> -->
 </html>
