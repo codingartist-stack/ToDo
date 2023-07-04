@@ -1,4 +1,4 @@
-export default function createNewListTitle(target) {
+export default function createNewListTitle(event) {
   const newLine = document.createElement('li');
   const linkTag = document.createElement('a');
   linkTag.href = ' ';
@@ -6,5 +6,5 @@ export default function createNewListTitle(target) {
 
   const lineTitle = prompt('List Title');
   linkTag.innerText = lineTitle;
-  target.parentNode.insertBefore(newLine, target);
+  event.currentTarget.parentNode.insertBefore(newLine, event.currentTarget);
 }

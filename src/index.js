@@ -5,8 +5,13 @@ import './displayContainer';
 import './addModules/createNewListTitle';
 import createNewListTitle from './addModules/createNewListTitle';
 
-const ADDButton = document.getElementById('myListButton');
+const addMyListButton = document.getElementById('myListButton');
+const addBoard = document.getElementById('addBoardButton');
 
-ADDButton.addEventListener('click', (target) => {
-  createNewListTitle(target);
+addMyListButton.addEventListener('click', (currentTarget) => {
+  createNewListTitle(currentTarget);
+});
+
+addBoard.addEventListener('click', (currentTarget) => {
+  createNewListTitle(currentTarget);
 });
