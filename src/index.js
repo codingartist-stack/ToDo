@@ -4,6 +4,7 @@ import './sidebar';
 import './displayContainer';
 import './addModules/createNewListTitle';
 import createNewListTitle from './addModules/createNewListTitle';
+import createCard from './addModules/createNewCard';
 
 const addMyListButton = document.getElementById('myListButton');
 const addBoard = document.getElementById('addBoardButton');
