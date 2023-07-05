@@ -5,6 +5,7 @@ import './displayContainer';
 import './addModules/createNewListTitle';
 import createNewListTitle from './addModules/createNewListTitle';
 import createCard from './addModules/createNewCard';
+import createSection from './addModules/createSection';
 
 const myListsContainer = document.getElementById('myListsContainer');
 const addMyListButton = document.getElementById('myListButton');
@@ -16,11 +17,13 @@ const ToDoBoardContainer = document.getElementById('ToDoBoardContainer');
 
 addMyListButton.addEventListener('click', (currentTarget) => {
   createNewListTitle(currentTarget);
+  createSection(myListsContainer);
   createCard(myListsContainer);
 });
 
 addBoard.addEventListener('click', (currentTarget) => {
   createNewListTitle(currentTarget);
+  createCard(toDoBoards);
   createCard(ToDoBoardContainer);
 });
 
