@@ -1,4 +1,4 @@
-export default function createCard() {
+export default function createCard(section) {
   const cardContainer = document.createElement('div');
   cardContainer.classList.add('card');
 
@@ -33,4 +33,6 @@ export default function createCard() {
 
   cardContainer.appendChild(cardTitle);
   cardContainer.appendChild(itemFormContainer);
+
+  section.appendChild(cardContainer);
 }
