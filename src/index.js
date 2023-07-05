@@ -16,12 +16,10 @@ const ToDoBoardContainer = document.getElementById('ToDoBoardContainer');
 
 addMyListButton.addEventListener('click', (currentTarget) => {
   newListTitle(currentTarget, myListsContainer);
-  createCard(myListsContainer);
 });
 
 addBoard.addEventListener('click', (currentTarget) => {
   newListTitle(currentTarget, ToDoBoardContainer);
-  createCard(ToDoBoardContainer);
 });
 
 createCard(personalContainer);

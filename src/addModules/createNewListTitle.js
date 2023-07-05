@@ -1,3 +1,5 @@
+import createCard from './createNewCard';
+
 export default function newListTitle(event, section) {
   const newLine = document.createElement('li');
   const linkTag = document.createElement('a');
@@ -5,6 +7,11 @@ export default function newListTitle(event, section) {
   newLine.appendChild(linkTag);
 
   const lineTitle = prompt('List Title');
+
+  if (lineTitle === null) {
+    return;
+  }
+
   linkTag.innerText = lineTitle;
   event.currentTarget.parentNode.insertBefore(newLine, event.currentTarget);
 
@@ -14,4 +21,6 @@ export default function newListTitle(event, section) {
 
   sectionContainer.appendChild(sectionTitle);
   section.appendChild(sectionContainer);
+
+  createCard(section);
 }
