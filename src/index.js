@@ -3,9 +3,8 @@ import './style.css';
 import './sidebar';
 import './displayContainer';
 import './addModules/createNewListTitle';
-import createNewListTitle from './addModules/createNewListTitle';
+import newListTitle from './addModules/createNewListTitle';
 import createCard from './addModules/createNewCard';
-import createSection from './addModules/createSection';
 
 const myListsContainer = document.getElementById('myListsContainer');
 const addMyListButton = document.getElementById('myListButton');
@@ -16,14 +15,12 @@ const shoppingListContainer = document.getElementById('shoppingListContainer');
 const ToDoBoardContainer = document.getElementById('ToDoBoardContainer');
 
 addMyListButton.addEventListener('click', (currentTarget) => {
-  createNewListTitle(currentTarget);
-  createSection(myListsContainer);
+  newListTitle(currentTarget, myListsContainer);
   createCard(myListsContainer);
 });
 
 addBoard.addEventListener('click', (currentTarget) => {
-  createNewListTitle(currentTarget);
-  createCard(toDoBoards);
+  newListTitle(currentTarget, ToDoBoardContainer);
   createCard(ToDoBoardContainer);
 });
 
