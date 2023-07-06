@@ -20,6 +20,8 @@ addMyListButton.addEventListener('click', (currentTarget) => {
 
 addBoard.addEventListener('click', (currentTarget) => {
   newListTitle(currentTarget, ToDoBoardContainer);
+  createCard(ToDoBoardContainer);
+  createCard(ToDoBoardContainer);
 });
 
 createCard(personalContainer);

@@ -19,7 +19,7 @@ export default function newListTitle(event, section) {
   sectionTitle.innerText = lineTitle;
   sectionTitle.id = lineTitle;
 
-  linkTag.href = `#${sectionTitle}`;
+  linkTag.href = `#${lineTitle}`;
 
   sectionContainer.appendChild(sectionTitle);
   section.appendChild(sectionContainer);
