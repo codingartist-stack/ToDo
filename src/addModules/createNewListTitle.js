@@ -3,7 +3,6 @@ import createCard from './createNewCard';
 export default function newListTitle(event, section) {
   const newLine = document.createElement('li');
   const linkTag = document.createElement('a');
-  linkTag.href = ' ';
   newLine.appendChild(linkTag);
 
   const lineTitle = prompt('List Title');
@@ -18,6 +17,9 @@ export default function newListTitle(event, section) {
   const sectionContainer = document.createElement('div');
   const sectionTitle = document.createElement('h3');
   sectionTitle.innerText = lineTitle;
+  sectionTitle.id = lineTitle;
+
+  linkTag.href = `#${sectionTitle}`;
 
   sectionContainer.appendChild(sectionTitle);
   section.appendChild(sectionContainer);
