@@ -13,6 +13,7 @@ export default function createCard(section) {
   const newItemField = document.createElement('input');
   newItemField.type = 'text';
   newItemField.name = 'newItem';
+  newItemField.classList.add('fieldEntry');
   newItemField.placeholder = 'New Item/Task';
 
   const dueDateLabel = document.createElement('label');
