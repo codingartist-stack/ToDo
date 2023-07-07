@@ -5,6 +5,7 @@ import './displayContainer';
 import './addModules/createNewListTitle';
 import newListTitle from './addModules/createNewListTitle';
 import createCard from './addModules/createNewCard';
+import createNewTask from './addModules/createTask';
 
 const myListsContainer = document.getElementById('myListsContainer');
 const addMyListButton = document.getElementById('myListButton');
@@ -33,8 +34,6 @@ const itemForm = document.getElementsByClassName('taskForm');
 
 [...itemButton].forEach((button) => {
   button.addEventListener('click', (event) => {
-    const para = document.createElement('p');
-    const parentDiv = button.parentElement;
-    event.currentTarget.parentNode.insertBefore(para, parentDiv);
+    createNewTask(button);
   });
 });
