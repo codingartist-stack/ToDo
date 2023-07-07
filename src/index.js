@@ -27,3 +27,14 @@ addBoard.addEventListener('click', (currentTarget) => {
 createCard(personalContainer);
 createCard(workContainer);
 createCard(shoppingListContainer);
+
+const itemButton = document.getElementsByClassName('addItemButton');
+const itemForm = document.getElementsByClassName('taskForm');
+
+[...itemButton].forEach((button) => {
+  button.addEventListener('click', (event) => {
+    const para = document.createElement('p');
+    const parentDiv = button.parentElement;
+    event.currentTarget.parentNode.insertBefore(para, parentDiv);
+  });
+});
