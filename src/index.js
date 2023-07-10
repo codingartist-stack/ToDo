@@ -30,7 +30,7 @@ createCard(workContainer);
 createCard(shoppingListContainer);
 
 const itemButton = document.getElementsByClassName('addItemButton');
-const taskFieldEntry = document.getElementsByClassName('fieldEntry')
+// const taskFieldEntry = document.getElementsByClassName('fieldEntry');
 
 [...itemButton].forEach((button) => {
   button.addEventListener('click', (event) => {
