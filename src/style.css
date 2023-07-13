@@ -76,6 +76,11 @@ body {
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
 }
 
+.topContainer {
+  display: grid;
+  width: 100%;
+}
+
 .sidebar {
   background-color: var(--neutral-color);
 }
