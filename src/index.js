@@ -9,25 +9,17 @@ import createNewTask from './addModules/createTask';
 
 const myListsContainer = document.getElementById('myListsContainer');
 const addMyListButton = document.getElementById('myListButton');
-const addBoard = document.getElementById('addBoardButton');
-const personalContainer = document.getElementById('personalContainer');
-const workContainer = document.getElementById('workContainer');
-const shoppingListContainer = document.getElementById('shoppingListContainer');
-const ToDoBoardContainer = document.getElementById('ToDoBoardContainer');
+const personalCardContainer = document.getElementById('personalCardContainer');
+const workCardContainer = document.getElementById('workCardContainer');
+const shoppingCardContainer = document.getElementById('shoppingCardContainer');
 
 addMyListButton.addEventListener('click', (currentTarget) => {
   newListTitle(currentTarget, myListsContainer);
 });
 
-addBoard.addEventListener('click', (currentTarget) => {
-  newListTitle(currentTarget, ToDoBoardContainer);
-  createCard(ToDoBoardContainer);
-  createCard(ToDoBoardContainer);
-});
-
-createCard(personalContainer);
-createCard(workContainer);
-createCard(shoppingListContainer);
+createCard(personalCardContainer);
+createCard(workCardContainer);
+createCard(shoppingCardContainer);
 
 const itemButton = document.getElementsByClassName('addItemButton');
 // const taskFieldEntry = document.getElementsByClassName('fieldEntry');

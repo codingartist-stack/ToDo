@@ -67,6 +67,7 @@
 
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 body {
@@ -74,15 +75,19 @@ body {
   padding: 0;
   background-color: var(--lightest-color);
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
+  height: 100%;
 }
 
 .topContainer {
   display: grid;
-  width: 100%;
+  height: 100%;
+  grid-template-areas: 'sidebar mainContent';
+  grid-template-columns: 250px 2fr;
 }
 
 .sidebar {
   background-color: var(--neutral-color);
+  grid-area: sidebar;
 }
 
 .skip-nav-link {
@@ -110,4 +115,11 @@ ul {
   background-image: url(./images/watercolor_background.jpg);
   /* Image by <a href="https://pixabay.com/users/ractapopulous-24766/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2520238">JL G</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2520238">Pixabay</a> */
   background-size: cover;
+  grid-area: mainContent;
+}
+
+.card {
+  background-color: var(--lightest-color);
+  padding: 0.5rem;
+  width: max-content;
 }
