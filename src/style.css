@@ -116,10 +116,32 @@ ul {
   /* Image by <a href="https://pixabay.com/users/ractapopulous-24766/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2520238">JL G</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2520238">Pixabay</a> */
   background-size: cover;
   grid-area: mainContent;
+  padding: 1rem;
+}
+
+.cardContainer,
+#personalCardContainer,
+#workCardContainer,
+#shoppingCardContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
 }
 
 .card {
   background-color: var(--lightest-color);
   padding: 0.5rem;
-  width: max-content;
+  min-height: 210px;
+  display: grid;
+}
+
+.cardTitle {
+  align-self: top;
+  height: max-content;
+  font-size: larger;
+  padding: 0.25rem;
+}
+
+.taskForm {
+  align-self: end;
 }

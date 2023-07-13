@@ -5,6 +5,7 @@ export default function createCard(section) {
   const cardTitle = document.createElement('input');
   cardTitle.type = 'text';
   cardTitle.name = 'cardTitle';
+  cardTitle.placeholder = 'ListTitle';
   cardTitle.classList.add('cardTitle');
 
   const itemFormContainer = document.createElement('div');
@@ -17,7 +18,6 @@ export default function createCard(section) {
   newItemField.placeholder = 'New Item/Task';
 
   const dueDateLabel = document.createElement('label');
-  dueDateLabel.innerText = 'Complete By: ';
 
   const newItemDueDate = document.createElement('input');
   newItemDueDate.type = 'date';

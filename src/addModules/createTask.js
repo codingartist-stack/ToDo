@@ -7,7 +7,7 @@ export default function createNewTask(button) {
 
   para.innerText =
     button.parentElement.childNodes[0].value +
-    ' By: ' +
+    '   By: ' +
     button.parentElement.childNodes[2].value;
 
   const parentDiv = button.parentNode;

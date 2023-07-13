@@ -20,6 +20,8 @@ addMyListButton.addEventListener('click', (currentTarget) => {
 createCard(personalCardContainer);
 createCard(workCardContainer);
 createCard(shoppingCardContainer);
+createCard(shoppingCardContainer);
+createCard(shoppingCardContainer);
 
 const itemButton = document.getElementsByClassName('addItemButton');
 // const taskFieldEntry = document.getElementsByClassName('fieldEntry');
