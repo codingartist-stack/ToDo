@@ -125,14 +125,16 @@ ul {
 #shoppingCardContainer {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 .card {
   background-color: var(--lightest-color);
   padding: 0.5rem;
   min-height: 210px;
+  min-width: 215px;
   display: grid;
+  border-radius: 0.25rem;
 }
 
 .cardTitle {
