@@ -1,6 +1,6 @@
 export default function createCard(section) {
-  const cardContainer = document.createElement('div');
-  cardContainer.classList.add('card');
+  const card = document.createElement('div');
+  card.classList.add('card');
 
   const cardTitle = document.createElement('input');
   cardTitle.type = 'text';
@@ -32,8 +32,8 @@ export default function createCard(section) {
   itemFormContainer.appendChild(newItemDueDate);
   itemFormContainer.appendChild(newItemButton);
 
-  cardContainer.appendChild(cardTitle);
-  cardContainer.appendChild(itemFormContainer);
+  card.appendChild(cardTitle);
+  card.appendChild(itemFormContainer);
 
-  section.appendChild(cardContainer);
+  section.appendChild(card);
 }

@@ -21,8 +21,12 @@ export default function newListTitle(event, section) {
 
   linkTag.href = `#${lineTitle}`;
 
+  const cardContainer = document.createElement('div');
+  cardContainer.classList.add('cardContainer');
+
   sectionContainer.appendChild(sectionTitle);
+  sectionContainer.appendChild(cardContainer);
   section.appendChild(sectionContainer);
 
-  createCard(section);
+  createCard(cardContainer);
 }
