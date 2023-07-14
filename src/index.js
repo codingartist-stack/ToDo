@@ -6,6 +6,7 @@ import './addModules/createNewListTitle';
 import newListTitle from './addModules/createNewListTitle';
 import createCard from './addModules/createNewCard';
 import createNewTask from './addModules/createTask';
+import './addModules/createListCardButton';
 
 const myListsContainer = document.getElementById('myListsContainer');
 const addMyListButton = document.getElementById('myListButton');
@@ -24,10 +25,18 @@ createCard(shoppingCardContainer);
 createCard(shoppingCardContainer);
 
 const itemButton = document.getElementsByClassName('addItemButton');
-// const taskFieldEntry = document.getElementsByClassName('fieldEntry');
 
 [...itemButton].forEach((button) => {
   button.addEventListener('click', (event) => {
     createNewTask(button);
+  });
+});
+
+const createCardButton = document.querySelectorAll('.createListCard');
+
+createCardButton.forEach((cardButton) => {
+  console.log('there is a button');
+  cardButton.addEventListener('click', (e) => {
+    console.log('clicked');
   });
 });

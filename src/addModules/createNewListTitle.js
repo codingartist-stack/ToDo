@@ -29,6 +29,14 @@ export default function newListTitle(event, section) {
   sectionContainer.appendChild(cardContainer);
   section.appendChild(sectionContainer);
 
+  const createListButton = document.createElement('button');
+  createListButton.innerText = 'Add List';
+  createListButton.classList.add('createListCard');
+
+  section.appendChild(createListButton);
+
+  createCard(cardContainer);
+  createCard(cardContainer);
   createCard(cardContainer);
 
   const itemButton = document.getElementsByClassName('addItemButton');

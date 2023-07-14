@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToDo</title>
   <script defer src="bundle.js"></script></head>
+  <a class="skip-nav-link" href="#mainContentContainer">skip navigation</a>
   <header id="header">To Do List</header>
   <body>
-    <a class="skip-nav-link" href="#mainContentContainer">skip navigation</a>
     <div class="topContainer">
       <div class="sidebar">
         <nav class="primary-nav">
@@ -21,11 +21,8 @@
               <li role="presentation">
                 <a href="#shoppingListContainer">Shopping Lists</a>
               </li>
-              <!-- title card is the name of shop, example one card called walmart another called target -->
               <li id="myListButton">
-                <button class="addButton">
-                  <span>ADD</span>
-                </button>
+                <button class="addButton"><span>Add</span> List</button>
               </li>
             </ul>
           </ul>
@@ -38,15 +35,19 @@
           <div id="personalContainer">
             <h3>Personal</h3>
             <div id="personalCardContainer"></div>
+            <button class="createListCard">Add List</button>
           </div>
 
           <div id="workContainer">
             <h3>Work</h3>
             <div id="workCardContainer"></div>
+            <button class="createListCard">Add List</button>
           </div>
+
           <div id="shoppingListContainer">
             <h3>Shopping Lists</h3>
             <div id="shoppingCardContainer"></div>
+            <button class="createListCard">Add List</button>
           </div>
         </div>
       </div>
