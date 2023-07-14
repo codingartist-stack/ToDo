@@ -1,4 +1,5 @@
 import createCard from './createNewCard';
+import createNewTask from './createTask';
 
 export default function newListTitle(event, section) {
   const newLine = document.createElement('li');
@@ -29,4 +30,12 @@ export default function newListTitle(event, section) {
   section.appendChild(sectionContainer);
 
   createCard(cardContainer);
+
+  const itemButton = document.getElementsByClassName('addItemButton');
+
+  [...itemButton].forEach((button) => {
+    button.addEventListener('click', (event) => {
+      createNewTask(button);
+    });
+  });
 }
