@@ -35,10 +35,9 @@ const itemButton = document.getElementsByClassName('addItemButton');
 const createCardButton = document.querySelectorAll('.createListCard');
 
 createCardButton.forEach((cardButton) => {
-  console.log('there is a button');
   cardButton.addEventListener('click', (event) => {
     const parentDiv = event.target.parentNode.children[1];
-    console.log(parentDiv);
+
     createCard(parentDiv);
   });
 });
