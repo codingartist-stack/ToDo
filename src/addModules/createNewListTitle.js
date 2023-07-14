@@ -50,11 +50,19 @@ export default function newListTitle(event, section) {
   const createCardButton = document.querySelectorAll('.createListCard');
 
   createCardButton.forEach((cardButton) => {
-    console.log('there is a button');
     cardButton.addEventListener('click', (event) => {
       const parentDiv = event.target.parentNode.children[1];
       console.log(parentDiv);
       createCard(parentDiv);
+    });
+  });
+
+  const deleteButton = document.querySelectorAll('.deleteButton');
+
+  deleteButton.forEach((delButton) => {
+    delButton.addEventListener('click', (event) => {
+      const card = event.target.parentNode;
+      card.remove();
     });
   });
 }

@@ -41,3 +41,12 @@ createCardButton.forEach((cardButton) => {
     createCard(parentDiv);
   });
 });
+
+const deleteButton = document.querySelectorAll('.deleteButton');
+
+deleteButton.forEach((delButton) => {
+  delButton.addEventListener('click', (event) => {
+    const card = event.target.parentNode;
+    card.remove();
+  });
+});

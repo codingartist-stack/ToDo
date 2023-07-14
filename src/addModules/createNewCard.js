@@ -8,6 +8,10 @@ export default function createCard(section) {
   cardTitle.placeholder = 'ListTitle';
   cardTitle.classList.add('cardTitle');
 
+  const deleteButton = document.createElement('button');
+  deleteButton.classList.add('deleteButton');
+  deleteButton.innerText = 'delete list';
+
   const itemFormContainer = document.createElement('div');
   itemFormContainer.classList.add('taskForm');
 
@@ -32,6 +36,7 @@ export default function createCard(section) {
   itemFormContainer.appendChild(newItemDueDate);
   itemFormContainer.appendChild(newItemButton);
 
+  card.appendChild(deleteButton);
   card.appendChild(cardTitle);
   card.appendChild(itemFormContainer);
 
