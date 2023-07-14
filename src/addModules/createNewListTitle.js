@@ -22,9 +22,14 @@ export default function newListTitle(event, section) {
 
   linkTag.href = `#${lineTitle}`;
 
+  const deleteSectionButton = document.createElement('button');
+  deleteSectionButton.classList.add('deleteButton');
+  deleteSectionButton.innerText = 'delete list';
+
   const cardContainer = document.createElement('div');
   cardContainer.classList.add('cardContainer');
 
+  sectionContainer.appendChild(deleteSectionButton);
   sectionContainer.appendChild(sectionTitle);
   sectionContainer.appendChild(cardContainer);
   section.appendChild(sectionContainer);
