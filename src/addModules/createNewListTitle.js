@@ -33,7 +33,7 @@ export default function newListTitle(event, section) {
   createListButton.innerText = 'Add List';
   createListButton.classList.add('createListCard');
 
-  section.appendChild(createListButton);
+  sectionContainer.appendChild(createListButton);
 
   createCard(cardContainer);
   createCard(cardContainer);
@@ -44,6 +44,17 @@ export default function newListTitle(event, section) {
   [...itemButton].forEach((button) => {
     button.addEventListener('click', (event) => {
       createNewTask(button);
+    });
+  });
+
+  const createCardButton = document.querySelectorAll('.createListCard');
+
+  createCardButton.forEach((cardButton) => {
+    console.log('there is a button');
+    cardButton.addEventListener('click', (event) => {
+      const parentDiv = event.target.parentNode.children[1];
+      console.log(parentDiv);
+      createCard(parentDiv);
     });
   });
 }
