@@ -2,7 +2,7 @@
   --lightest-color: #f7f6f2;
   --tan-color: #f0e5cf;
   --neutral-color: #c8c6c6;
-  --action-color: #4b6587;
+  --action-color: #2c507f;
 }
 
 @font-face {
@@ -107,6 +107,14 @@ body {
   top: 0;
 }
 
+header {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  background-color: var(--action-color);
+  color: var(--lightest-color);
+}
+
 ul {
   margin: 0;
 }
@@ -117,6 +125,7 @@ button {
   font-size: medium;
   padding: 0.5rem;
   border-radius: 0.25rem;
+  margin: 0.5rem;
 }
 
 .mainContentContainer {
@@ -133,7 +142,7 @@ button {
 #shoppingCardContainer {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
 
 .card {
@@ -143,6 +152,7 @@ button {
   min-width: 215px;
   display: grid;
   border-radius: 0.25rem;
+  box-shadow: 5px 5px 5px rgb(96, 96, 96);
 }
 
 .cardTitle {
