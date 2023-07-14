@@ -86,7 +86,7 @@ body {
 }
 
 .sidebar {
-  background-color: var(--tan-color);
+  background-color: var(--lightest-color);
   grid-area: sidebar;
 }
 
