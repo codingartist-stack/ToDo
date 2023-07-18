@@ -1,8 +1,13 @@
 :root {
-  --lightest-color: #f7f6f2;
-  --tan-color: #ebdce9;
-  --neutral-color: #c8c6c6;
-  --action-color: #2c507f;
+  --lightest-warmColor: #f3f3f3;
+  --lighter-warmColor: #ebe6e6;
+  --neutral-warmColor: #e8d4b4;
+  --action-warmColor: #ff896b;
+
+  --lightest-coolColor: #f5efe6;
+  --lighter-coolColor: #e8dfca;
+  --neutral-coolColor: #aebdca;
+  --action-coolColor: #7895b2;
 }
 
 @font-face {
@@ -78,7 +83,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--lightest-color);
+  /* background-color: var(--lightest-color); */
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
   height: 100%;
 }
