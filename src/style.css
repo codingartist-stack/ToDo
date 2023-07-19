@@ -75,6 +75,11 @@
   src: url(./fonts/Linearions/Linearicons-Free.ttf);
 }
 
+@font-face {
+  font-family: 'IcoMoon';
+  src: url(./fonts/IcoMoon/IcoMoon-Free.ttf);
+}
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -83,7 +88,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* background-color: var(--lightest-color); */
   font-family: 'Lato-Regular', 'Courier New', Courier, monospace;
   height: 100%;
 }
