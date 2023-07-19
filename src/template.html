@@ -6,6 +6,15 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <a class="skip-nav-link" href="#mainContentContainer">skip navigation</a>
-  <header id="header">To Do List</header>
-  <body></body>
+  <header id="headerContainer"><div class="headerText">To Do List</div></header>
+  <body>
+    <div class="mainContainer">
+      <div class="sidebarContainer">
+        <nav class="navBarContainer">
+          <ul class="navList"></ul>
+        </nav>
+      </div>
+      <div class="contentContainer" id="mainContentContainer"></div>
+    </div>
+  </body>
 </html>
